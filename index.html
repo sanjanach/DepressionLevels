@@ -8,7 +8,7 @@
         <title>DEPRESSION LEVELS DETECTOR</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link href="css/styles.css" rel="stylesheet" >
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -60,108 +60,177 @@
                         <br><br>
                         <b>Instructions: </b><p>You can make a copy of this scale and use it to track your moods on a weekly basis. It could also be utilised to demonstrate to your doctor how your symptoms have altered over time. Changes of five points or more are considered noteworthy. This scale is not intended to be used to make a depression diagnosis or to replace a professional diagnosis. If you think you might be depressed, seek help from a mental health professional as soon as possible.</p>
                         <br><br>
-                        <form name="form1" method="post" action="/poc/view_doc.php">
+                        
+                        
+<!--<form name="QUIZ" id="QUIZ" method="post" action="/poc/view_doc.php">
    <input type="hidden" name="type" value="doc">
    <input type="hidden" name="id" value="973">
-   <p><b><i>1.</i> I do things slowly.</b><br>
-   <input type="radio" name="_100" value="0"> Not at all<br>
-   <input type="radio" name="_100" value="1"> Just a little<br>
-   <input type="radio" name="_100" value="2"> Somewhat<br>
-   <input type="radio" name="_100" value="3"> Moderately<br>
-   <input type="radio" name="_100" value="4"> Quite a lot<br>
-   <input type="radio" name="_100" value="5"> Very much<br></p><p></p>
-   <p><b><i>2.</i> My future seems hopeless.</b><br>
-   <input type="radio" name="_200" value="0"> Not at all<br>
-   <input type="radio" name="_200" value="1"> Just a little<br>
-   <input type="radio" name="_200" value="2"> Somewhat<br>
-   <input type="radio" name="_200" value="3"> Moderately<br>
-   <input type="radio" name="_200" value="4"> Quite a lot<br>
-   <input type="radio" name="_200" value="5"> Very much<br></p><p></p>
-   <p><b><i>3.</i> It is hard for me to concentrate on reading.</b><br>
-   <input type="radio" name="_300" value="0"> Not at all<br>
-   <input type="radio" name="_300" value="1"> Just a little<br>
-   <input type="radio" name="_300" value="2"> Somewhat<br>
-   <input type="radio" name="_300" value="3"> Moderately<br>
-   <input type="radio" name="_300" value="4"> Quite a lot<br>
-   <input type="radio" name="_300" value="5"> Very much<br></p><p></p>
-   <p><b><i>4.</i> The pleasure and joy has gone out of my life.</b><br>
-   <input type="radio" name="_400" value="0"> Not at all<br>
-   <input type="radio" name="_400" value="1"> Just a little<br>
-   <input type="radio" name="_400" value="2"> Somewhat<br>
-   <input type="radio" name="_400" value="3"> Moderately<br>
-   <input type="radio" name="_400" value="4"> Quite a lot<br>
-   <input type="radio" name="_400" value="5"> Very much<br></p><p></p>
-   <p><b><i>5.</i> I have difficulty making decisions.</b><br>
-   <input type="radio" name="_500" value="0"> Not at all<br>
-   <input type="radio" name="_500" value="1"> Just a little<br>
-   <input type="radio" name="_500" value="2"> Somewhat<br>
-   <input type="radio" name="_500" value="3"> Moderately<br>
-   <input type="radio" name="_500" value="4"> Quite a lot<br>
-   <input type="radio" name="_500" value="5"> Very much<br></p><p></p>
-   <p><b><i>6.</i> I have lost interest in aspects of life that used to be important to me.</b><br>
-   <input type="radio" name="_600" value="0"> Not at all<br>
-   <input type="radio" name="_600" value="1"> Just a little<br>
-   <input type="radio" name="_600" value="2"> Somewhat<br>
-   <input type="radio" name="_600" value="3"> Moderately<br>
-   <input type="radio" name="_600" value="4"> Quite a lot<br>
-   <input type="radio" name="_600" value="5"> Very much<br></p><p></p>
-   <p><b><i>7.</i> I feel sad, blue, and unhappy.</b><br>
-   <input type="radio" name="_700" value="0"> Not at all<br>
-   <input type="radio" name="_700" value="1"> Just a little<br>
-   <input type="radio" name="_700" value="2"> Somewhat<br>
-   <input type="radio" name="_700" value="3"> Moderately<br>
-   <input type="radio" name="_700" value="4"> Quite a lot<br>
-   <input type="radio" name="_700" value="5"> Very much<br></p><p></p>
-   <p><b><i>8.</i> I am agitated and keep moving around.</b><br>
-   <input type="radio" name="_800" value="0"> Not at all<br>
-   <input type="radio" name="_800" value="1"> Just a little<br><input type="radio" name="_800" value="2"> Somewhat<br><input type="radio" name="_800" value="3"> Moderately<br><input type="radio" name="_800" value="4"> Quite a lot<br><input type="radio" name="_800" value="5"> Very much<br></p><p></p><p><b><i>9.</i> I feel fatigued.</b><br><input type="radio" name="_900" value="0"> Not at all<br><input type="radio" name="_900" value="1"> Just a little<br><input type="radio" name="_900" value="2"> Somewhat<br><input type="radio" name="_900" value="3"> Moderately<br><input type="radio" name="_900" value="4"> Quite a lot<br><input type="radio" name="_900" value="5"> Very much<br></p><p></p>
-   <p><b><i>10.</i> It takes great effort for me to do simple things.</b><br>
-   <input type="radio" name="_1000" value="0"> Not at all<br>
-   <input type="radio" name="_1000" value="1"> Just a little<br>
-   <input type="radio" name="_1000" value="2"> Somewhat<br>
-   <input type="radio" name="_1000" value="3"> Moderately<br>
-   <input type="radio" name="_1000" value="4"> Quite a lot<br>
-   <input type="radio" name="_1000" value="5"> Very much<br></p><p></p>
-   <p><b><i>11.</i> I feel that I am a guilty person who deserves to be punished.</b><br>
-   <input type="radio" name="_1100" value="0"> Not at all<br>
-   <input type="radio" name="_1100" value="1"> Just a little<br>
-   <input type="radio" name="_1100" value="2"> Somewhat<br>
-   <input type="radio" name="_1100" value="3"> Moderately<br>
-   <input type="radio" name="_1100" value="4"> Quite a lot<br>
-   <input type="radio" name="_1100" value="5"> Very much<br></p><p></p>
-   <p><b><i>12.</i> I feel like a failure.</b><br>
-   <input type="radio" name="_1200" value="0"> Not at all<br>
-   <input type="radio" name="_1200" value="1"> Just a little<br>
-   <input type="radio" name="_1200" value="2"> Somewhat<br>
-   <input type="radio" name="_1200" value="3"> Moderately<br>
-   <input type="radio" name="_1200" value="4"> Quite a lot<br>
-   <input type="radio" name="_1200" value="5"> Very much<br></p><p></p>
-   <p><b><i>13.</i> I feel lifeless -- more dead than alive.</b><br>
-   <input type="radio" name="_1300" value="0"> Not at all<br>
-   <input type="radio" name="_1300" value="1"> Just a little<br>
-   <input type="radio" name="_1300" value="2"> Somewhat<br>
-   <input type="radio" name="_1300" value="3"> Moderately<br>
-   <input type="radio" name="_1300" value="4"> Quite a lot<br>
-   <input type="radio" name="_1300" value="5"> Very much<br></p><p></p>
-   <p><b><i>14.</i> My sleep has been disturbed -- too little, too much, or broken sleep.</b><br>
+   <p><b><i>1.</i>Do you have a hard time trusting the people around you?</b><br>
+   <input type="radio" name="q1" value="Agree"> Agree<br>
+   <input type="radio" name="q1" value="Do not Agree"> Do not Agree<br>
+   <input type="radio" name="q1" value="Sometimes"> Sometimes<br></p><p></p> <br>
+   <p><b><i>2.</i>Do you experience any bodily discomfort?</b><br>
+   <input type="radio" name="q2" value="Agree"> Agree<br>
+   <input type="radio" name="q2" value="Do not Agree"> Do not Agree<br>
+   <input type="radio" name="q2" value="Sometimes"> Sometimes<br></p><p></p><br>
+
+   <p><b><i>3.</i>How is your energy?</b><br>
+   <input type="radio" name="q3" value="Good"> Good<br>
+   <input type="radio" name="q3" value="Average"> Average<br>
+   <input type="radio" name="q3" value="Not good"> Not good<br></p><p></p><br>
+   <p><b><i>4.</i>Do you prefer to stay at home rather than going out and doing new things?</b><br>
+   <input type="radio" name="q4" value="Agree"> Agree<br>
+   <input type="radio" name="q4" value="Do not Agree"> Do not Agree<br>
+   <input type="radio" name="q4" value="Sometimes"> Sometimes<br></p><p></p><br>
+   <p><b><i>5.</i> Do all of the chores you've completed take substantially longer than usual?</b><br>
+   <input type="radio" name="q5" value="Agree"> Agree<br>
+   <input type="radio" name="q5" value="Do not Agree"> Do not Agree<br>
+   <input type="radio" name="q5" value="Sometimes"> Sometimes<br></p><p></p><br>
+   <p><b><i>6.</i> Do you use drugs nowadays?</b><br>
+   <input type="radio" name="q6" value="Yes"> Yes<br>
+   <input type="radio" name="q6" value="No"> No<br>
+   <input type="radio" name="q6" value="Often"> Often<br></p><p></p><br>
+   <p><b><i>7.</i>Are you having thoughts of your own death?</b><br>
+   <input type="radio" name="q6" value="Yes"> Yes<br>
+   <input type="radio" name="q6" value="No"> No<br>
+   <input type="radio" name="q6" value="Often"> Often<br></p><p></p><br>
+   <p><b><i>8.</i> Do you feel tired no matter how much you sleep?</b><br>
+   <input type="radio" name="q7" value="Agree"> Agree<br>
+   <input type="radio" name="q7" value="Do not Agree"> Do not Agree<br>
+   <input type="radio" name="q7" value="Sometimes"> Sometimes<br></p><br>
+    <p></p><p><b><i>9.</i> Are you tasting your food when you eat?</b><br>
+    <input type="radio" name="q6" value="Yes"> Yes<br>
+   <input type="radio" name="q6" value="No"> No<br>
+   <input type="radio" name="q6" value="Often"> Often<br></p><p></p><br>
+   <p><b><i>10.</i>are you able to focus on things like you did before?</b><br>
+   <input type="radio" name="q6" value="Yes"> Yes<br>
+   <input type="radio" name="q6" value="No"> No<br>
+   <input type="radio" name="q6" value="Often"> Often<br></p><p></p><br>
+   <p><b><i>11.</i>How many hours do you sleep each night?</b><br>
+   <input type="radio" name="q6" value="Yes"> 6-8 hrs<br>
+   <input type="radio" name="q6" value="No"> 8-10 hrs<br>
+   <input type="radio" name="q6" value="Often"> More than 10 hrs<br></p><p></p><br>
+   <p><b><i>12.</i>Do you enjoy spending time with others?</b><br>
+   <input type="radio" name="q6" value="Yes"> Yes<br>
+   <input type="radio" name="q6" value="No"> No<br>
+   <input type="radio" name="q6" value="Often"> Often<br></p><p></p><br>
+   <p><b><i>13.</i>Are you facing problems with making decisions?</b><br>
+     <input type="radio" name="q7" value="Agree"> Agree<br>
+   <input type="radio" name="q7" value="Do not Agree"> Do not Agree<br>
+   <input type="radio" name="q7" value="Sometimes"> Sometimes<br></p><br>
+   <p><b><i>14.</i>How often have you felt down, depressed, or hopeless?</b><br>
    <input type="radio" name="_1400" value="0"> Not at all<br>
    <input type="radio" name="_1400" value="1"> Just a little<br>
    <input type="radio" name="_1400" value="2"> Somewhat<br>
    <input type="radio" name="_1400" value="3"> Moderately<br>
    <input type="radio" name="_1400" value="4"> Quite a lot<br>
-   <input type="radio" name="_1400" value="5"> Very much<br></p><p></p>
-   <p><b><i>15.</i> I spend time thinking about <i>HOW</i> I might kill myself.</b><br>
+   <input type="radio" name="_1400" value="5"> Very much<br></p><p></p><br>
+    <p><b><i>15.</i>Have you had any thoughts of <i>suicide?</i></b><br>
    <input type="radio" name="_1500" value="0"> Not at all<br>
    <input type="radio" name="_1500" value="1"> Just a little<br>
    <input type="radio" name="_1500" value="2"> Somewhat<br>
    <input type="radio" name="_1500" value="3"> Moderately<br>
    <input type="radio" name="_1500" value="4"> Quite a lot<br>
-   <input type="radio" name="_1500" value="5"> Very much<br></p><p></p><p>
+   <input type="radio" name="_1500" value="5"> Very much<br></p><p></p><p><br>
 
    </form>
-    <input type="button" name="" value="Submit" >
-  
+    <input type="button" name="" value="Submit" onclick="check()" > -->
+<form name="QUIZ" id="QUIZ">
+   <div>
+     <p><b><i>1.</i> Do you have a hard time trusting the people around you?</b><br>
+     <p class="p2"><input type="radio" name="q1" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q1" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q1" value="SOMETIMES">SOMETIMES</p>
     
+   </div> 
+   <div>
+     <p><b><i>2.</i> Do you experience any bodily discomfort?</b><br>
+     <p class="p2"><input type="radio" name="q2" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q2" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q2" value="SOMETIMES">SOMETIMES</p>
+   </div>
+  <div>
+    <p><b><i>3.</i> How is your energy?</b><br>
+     <p class="p2"><input type="radio" name="q3" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q3" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q3" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>4.</i> Do you prefer to stay at home rather than going out and doing new things?</b><br>
+     <p class="p2"><input type="radio" name="q4" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q4" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q4" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>5.</i> Do all of the chores you've completed take substantially longer than usual?</b><br>
+      <p class="p2"><input type="radio" name="q5" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q5" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q5" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+      <p><b><i>6.</i> Do you use drugs nowadays?</b><br>
+      <p class="p2"><input type="radio" name="q6" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q6" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q6" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+    <p><b><i>7.</i> Are you having thoughts of your own death?</b><br>
+     <p class="p2"><input type="radio" name="q7" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q7" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q7" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>8.</i> Do you feel tired no matter how much you sleep?</b><br>
+      <p class="p2"><input type="radio" name="q8" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q8" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q8" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p></p><p><b><i>9.</i> Are you tasting your food when you eat?</b><br>
+      <p class="p2"><input type="radio" name="q9" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q9" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q9" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>10.</i> Are you able to focus on things like you did before?</b><br>
+     <p class="p2"><input type="radio" name="q10" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q10" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q10" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>11.</i>How many hours do you sleep each night?</b><br>
+      <p class="p2"><input type="radio" name="q11" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q11" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q11" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>12.</i>Do you enjoy spending time with others?</b><br>
+     <p class="p2"><input type="radio" name="q12" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q12" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q12" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>13.</i>Are you facing problems with making decisions?</b><br>
+     <p class="p2"><input type="radio" name="q13" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q13" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q13" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>14.</i>How often have you felt down, depressed, or hopeless?</b><br>
+    <p class="p2"><input type="radio" name="q14" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q14" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q14" value="SOMETIMES">SOMETIMES</p>
+   </div>
+   <div>
+     <p><b><i>15.</i>Have you had any thoughts of <i>suicide?</i></b><br>
+      <p class="p2"><input type="radio" name="q15" value="AGREE">AGREE</p>
+     <p class="p2"><input type="radio" name="q15" value="DO NOT AGREE">DO NOT AGREE</p>
+     <p class="p2"><input type="radio" name="q15" value="SOMETIMES">SOMETIMES</p>
+   </div> 
+                        </form>
+    <input type="button" name="" value="Submit" onclick= "check()" > 
+                      
+            <p id="result"> </p>
                                    
   
                     </div>
@@ -187,5 +256,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/logic.js"></script>
     </body>
 </html>
