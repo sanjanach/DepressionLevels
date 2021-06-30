@@ -97,9 +97,10 @@ function check() {
  document.write(result);
  document.write("\n Out of 45");
 
- if(result>=15 && result<=20) {document.write("\n"+"\n"+"YOU HAVE MILD DEPRESSION\n\n");} 
- else if(result>=25 && result<=30) {document.write("\n"+"\n"+"YOU HAVE MODERATE DEPRESSION"+"\n"+"\n");}
+if(result>=0 && result<=20) {document.write("\n\nYOU ARE PERFECTLY ALRIGHT!\n\n");} 
+ else if(result>=20 && result<=25) {document.write("\n\nYOU'RE GOOD\n\n");}
+ else if(result>=25 && result<=30) {document.write("\n\nYOU HAVE MILD DEPRESSION\n\n");}
+ else if(result>=30 && result<=35) {document.write("\n\nYOU HAVE MODERATE DEPRESSION...It can be cured with proper medication\n\n");}
 else {
-  document.write("\n"+"\n"+"YOU HAVE SEVERE DEPRESSION\n\n");
+  document.write("\n\nYOU NEED TO CONSULT A DOCTOR\n\n");
 }
-} 
