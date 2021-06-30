@@ -47,7 +47,7 @@ function check() {
  if(q4=="AGREE") {d=3}
  else if(q4=="DO NOT AGREE") {d=1}
  else{d=2}
-
+ 
  if(q5=="AGREE") {e=3}
  else if(q5=="DO NOT AGREE") {e=1}
  else{e=2}
@@ -97,9 +97,11 @@ quiz.style.display="none";
   document.write(result);
   document.write("\n Out of 45");
 
- if(result>=0 && result<=15) {document.write("\n\nYOU HAVE MILD DEPRESSION\n\n");} 
- else if(result>=15 && result<=30) {document.write("\n\nYOU HAVE MODERATE DEPRESSION\n\n");}
+ if(result>=0 && result<=20) {document.write("\n\nYOU ARE PERFECTLY ALRIGHT!\n\n");} 
+ else if(result>=20 && result<=25) {document.write("\n\nYOU'RE GOOD\n\n");}
+ else if(result>=25 && result<=30) {document.write("\n\nYOU HAVE MILD DEPRESSION\n\n");}
+ else if(result>=30 && result<=35) {document.write("\n\nYOU HAVE MODERATE DEPRESSION\n\n");}
 else {
-  document.write("\n\nYOU HAVE SEVERE DEPRESSION\n\n");
+  document.write("\n\nYOU NEED TO CONSULT A DOCTOR\n\n");
 }
 } 
