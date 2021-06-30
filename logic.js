@@ -183,7 +183,11 @@ function SubmitScore()
  }
 
 
- 
+ if (q5 != undefined)
+ {
+	 score += eval(q5);
+ }
+
 
 
 
