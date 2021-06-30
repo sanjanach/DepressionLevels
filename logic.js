@@ -187,7 +187,71 @@ function SubmitScore()
  {
 	 score += eval(q5);
  }
+ 
+ 
+ 
+  if (q6 != undefined)
+ {
+	 score += eval(q6);
+ }
 
+
+
+ if (q7 != undefined)
+ {
+	 score += eval(q7);
+ }
+
+
+
+
+ if (q8 != undefined)
+ {
+	 score += eval(q8);
+ }
+
+
+ if (q9 != undefined)
+ {
+	 score += eval(q9);
+ }
+
+
+ if (q10 != undefined)
+ {
+	 score += eval(q10);
+ }
+
+
+ if (q11 != undefined)
+ {
+	 score += eval(q11);
+ }
+
+
+
+ if (q12 != undefined)
+ {
+	score += eval(q12);
+ }
+
+
+ if (q13 != undefined)
+ {
+	 score += eval(q13);
+ }
+
+
+ if (q14 != undefined)
+ {
+	 score += eval(q14);
+ }
+
+
+ if (q15 != undefined)
+ {
+	 score += eval(q15);
+ }
 
 
 
