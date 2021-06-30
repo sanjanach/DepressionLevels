@@ -92,16 +92,123 @@ function check() {
  else if(q15=="DO NOT AGREE") {o=1}
  else{o=2}
 quiz.style.display="none";
- result=a+b+c+d+e+f+g+h+i+j+k+l+m+n+o;
-  document.write("Your score is : ");
-  document.write(result);
-  document.write("\n Out of 45");
 
+
+
+ result=a+b+c+d+e+f+g+h+i+j+k+l+m+n+o;
+ 
+ 
+ 
+ $("#result").html("<h1>Your score is Zero </h1>");
+ 
+ // document.write("Your score is : ");
+  //document.write(result);
+  //document.write("\n Out of 45");
+/*
  if(result>=0 && result<=20) {document.write("\n\nYOU ARE PERFECTLY ALRIGHT!\n\n");} 
  else if(result>=20 && result<=25) {document.write("\n\nYOU'RE GOOD\n\n");}
  else if(result>=25 && result<=30) {document.write("\n\nYOU HAVE MILD DEPRESSION\n\n");}
  else if(result>=30 && result<=35) {document.write("\n\nYOU HAVE MODERATE DEPRESSION\n\n");}
 else {
   document.write("\n\nYOU NEED TO CONSULT A DOCTOR\n\n");
+  
+  
 }
+
+*/
 } 
+
+
+
+
+function SubmitScore()
+{
+	
+	var score = 0;
+	var strMessage = "";
+	
+	//--- do your score validation 
+	
+	
+	 var a=0;
+ var b=0;
+ var c=0;
+ var d=0;
+ var e=0;
+ var f=0;
+ var g=0;
+ var h=0;
+ var i=0;
+ var j=0;
+ var k=0;
+ var l=0;
+ var m=0;
+ var n=0;
+ var o=0;
+ 
+ 
+ var q1=  $("#q1:checked").val();
+ var q2=  $("#q2:checked").val();
+ var q3=  $("#q3:checked").val();
+ var q4=  $("#q4:checked").val();
+ 
+ 
+ if (q1 != undefined)
+ {
+	
+	 score += eval(q1);
+	
+ }
+
+
+ if (q2 != undefined)
+ {
+	 
+	 score += eval(q2);
+	
+ }
+
+
+
+ if (q3 != undefined)
+ {
+	 score += eval(q3);
+ }
+
+
+
+ if (q4 != undefined)
+ {
+	 score += eval(q4);
+ }
+
+
+ 
+
+
+
+ 
+ 
+
+	
+	
+	
+	//--- do your score validation 
+	
+	
+	
+	
+	if(score == 0)
+	{
+	 strMessage = "<div class=\"alert alert-danger\" role='alert'><b>Error!</h><br>Please answer all questions.</div>";
+	}else{
+		strMessage = "<div class=\"alert alert-success\" role='alert'><b>Thank you!</h><br>Your Score is "+  score  +".</div>";
+	}
+	
+	
+	
+	
+	
+	$("#result").html(strMessage);
+}
+
