@@ -3,26 +3,8 @@ function SubmitScore()
 	
 	var score = 0;
 	var strMessage = "";
-	
-	//--- do your score validation 
-	
-	
-	 var a=0;
- var b=0;
- var c=0;
- var d=0;
- var e=0;
- var f=0;
- var g=0;
- var h=0;
- var i=0;
- var j=0;
- var k=0;
- var l=0;
- var m=0;
- var n=0;
- var o=0;
- 
+	var strMessage2 = "";
+
  
  var q1=  $("#q1:checked").val();
  var q2=  $("#q2:checked").val();
