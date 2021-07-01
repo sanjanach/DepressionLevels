@@ -1,106 +1,171 @@
-function check() {
- var a=0;
- var b=0;
- var c=0;
- var d=0;
- var e=0;
- var f=0;
- var g=0;
- var h=0;
- var i=0;
- var j=0;
- var k=0;
- var l=0;
- var m=0;
- var n=0;
- var o=0;
- var q1=document.QUIZ.q1.value;
- var q2=document.QUIZ.q2.value;
- var q3=document.QUIZ.q3.value;
- var q4=document.QUIZ.q4.value;
- var q5=document.QUIZ.q5.value;
- var q6=document.QUIZ.q6.value;
- var q7=document.QUIZ.q7.value;
- var q8=document.QUIZ.q8.value;
- var q9=document.QUIZ.q9.value;
- var q10=document.QUIZ.q10.value;
- var q11=document.QUIZ.q11.value;
- var q12=document.QUIZ.q12.value;
- var q13=document.QUIZ.q13.value;
- var q14=document.QUIZ.q14.value;
- var q15=document.QUIZ.q15.value;
- var result =document.getElementById('result');
- var quiz=document.getElementById('QUIZ')
+function SubmitScore()
+{
+	
+	var score = 0;
+	var strMessage = "";
+	var strMessage2 = "";
+	
+	//--- do your score validation 
+	
+	
+
  
-  if(q1=="Agree") {a=3}
- else if(q1=="Do not agree") {a=1}
- else{a=2}
  
-  if(q2=="Agree") {b=3}
- else if(q2=="Do not agree") {b=1}
- else{b=2}
+ var q1 =  $("#q1:checked").val();
+ var q2 =  $("#q2:checked").val();
+ var q3 =  $("#q3:checked").val();
+ var q4 =  $("#q4:checked").val();
+ var q5 =  $("#q5:checked").val();
+ var q6 =  $("#q6:checked").val();
+ var q7 =  $("#q7:checked").val();
+ var q8 =  $("#q8:checked").val();
+ var q9 =  $("#q9:checked").val();
+ var q10 =  $("#q10:checked").val();
+ var q11 =  $("#q11:checked").val();
+ var q12 =  $("#q12:checked").val();
+ var q13 =  $("#q13:checked").val();
+ var q14 =  $("#q14:checked").val();
+ var q15 =  $("#q15:checked").val();
+ 
+ 
+ 
+ if (q1 != undefined)
+ {
+	
+	 score += eval(q1);
+	
+ }
 
- if(q3=="Dull and Lazy") {c=3}
- else if(q3=="Awesome") {c=1}
- else{c=2}
 
- if(q4=="I Always prefer Staying at Home") {d=3}
- else if(q4=="I Do not prefer Staying at Home") {d=1}
- else{d=2}
+ if (q2 != undefined)
+ {
+	 
+	 score += eval(q2);
+	
+ }
 
- if(q5=="Agree") {e=3}
- else if(q5=="Do not agree") {e=1}
- else{e=2}
 
- if(q6=="Agree") {f=3}
- else if(q6=="Do not agree") {f=1}
- else{f=2}
 
- if(q7=="Everyday") {g=3}
- else if(q7=="Not at all") {g=1}
- else{g=2}
+ if (q3 != undefined)
+ {
+	 score += eval(q3);
+ }
 
- if(q8=="Agree") {h=3}
- else if(q8=="Do not agree") {h=1}
- else{h=2}
 
-  if(q9=="No") {i=3}
- else if(q9=="Yes") {i=1}
- else{i=2}
 
-  if(q10=="No") {j=3}
- else if(q10=="Yes") {j=1}
- else{j=2}
+ if (q4 != undefined)
+ {
+	 score += eval(q4);
+ }
 
-  if(q11=="Irregular sleep/ more or less than 8hrs") {k=3}
- else if(q11=="6-8hrs") {k=1}
- else{k=2}
 
-  if(q12=="No") {l=3}
- else if(q12=="Yes") {l=1}
- else{l=2}
+ if (q5 != undefined)
+ {
+	 score += eval(q5);
+ }
+ 
+ 
+ 
+  if (q6 != undefined)
+ {
+	 score += eval(q6);
+ }
 
-  if(q13=="Agree") {m=3}
- else if(q13=="Do not agree") {m=1}
- else{m=2}
 
-  if(q14=="Most of the time") {n=3}
- else if(q14=="Not at all") {n=1}
- else{n=2}
 
-  if(q15=="Most of the time") {o=3}
- else if(q15=="Not at all") {o=1}
- else{o=2}
+ if (q7 != undefined)
+ {
+	 score += eval(q7);
+ }
 
- result=a+b+c+d+e+f+g+h+i+j+k+l+m+n+o;
- document.write("Your Score is:   ");
- document.write(result);
- document.write("\n Out of 45");
 
-if(result>=0 && result<=20) {document.write("\n\nYOU ARE PERFECTLY ALRIGHT!\n\n");} 
- else if(result>=20 && result<=25) {document.write("\n\nYOU'RE GOOD\n\n");}
- else if(result>=25 && result<=30) {document.write("\n\nYOU HAVE MILD DEPRESSION\n\n");}
- else if(result>=30 && result<=35) {document.write("\n\nYOU HAVE MODERATE DEPRESSION...It can be cured with proper medication\n\n");}
+
+
+ if (q8 != undefined)
+ {
+	 score += eval(q8);
+ }
+
+
+ if (q9 != undefined)
+ {
+	 score += eval(q9);
+ }
+
+
+ if (q10 != undefined)
+ {
+	 score += eval(q10);
+ }
+
+
+ if (q11 != undefined)
+ {
+	 score += eval(q11);
+ }
+
+
+
+ if (q12 != undefined)
+ {
+	score += eval(q12);
+ }
+
+
+ if (q13 != undefined)
+ {
+	 score += eval(q13);
+ }
+
+
+ if (q14 != undefined)
+ {
+	 score += eval(q14);
+ }
+
+
+ if (q15 != undefined)
+ {
+	 score += eval(q15);
+ }
+
+
+
+ 
+ 
+
+	
+	
+	
+	//--- do your score validation 
+	
+	
+	
+	
+	if(score == 0)
+	{
+	 strMessage = "<div class=\"alert alert-danger\" role='alert'><b>Error!</h><br>Please answer all questions.</div>";
+	}else{
+		strMessage = "<div class=\"alert alert-success\" role='alert'><b>Thank you!</h><br>Your Score is "+  score  +".</div>";
+	}
+	
+	if(score>=0 && score<=20) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You're Perfectly Alright</h></div> "}
+ else if(result>=20 && result<=25) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You're Good. You do not have any kind of Depression</h></div> "}
+ else if(score>=25 && score<=30) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You have Mild Depression. This can be Cured by socializing or sharing your thoughts with Others</h></div> "}
+ else if(score>=30 && score<=35) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You Have Moderate Depression. No need to Worry!!! Spend more time engaging in activities such as interacting with others.</h></div> "}
+    else if(score>=35 && score<=40) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You have Severe Depression.</h></div> "}
+    else if(score>=40 && score<=45) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You Have Severe Depression</h><br>Try to Consult a Doctor if Possible</div>";}
 else {
-  document.write("\n\nYOU NEED TO CONSULT A DOCTOR\n\n");
+  strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You need to consult a Doctor</div>";
+} 
+	
+	
+	
+	$("#result").html(strMessage);
+	$("#result2").html(strMessage2);
+}
+
+function resetform()
+{
+	$("#result").html("");
 }
