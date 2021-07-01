@@ -10,6 +10,17 @@ function SubmitScore()
  var q2=  $("#q2:checked").val();
  var q3=  $("#q3:checked").val();
  var q4=  $("#q4:checked").val();
+ var q5 =  $("#q5:checked").val();
+ var q6 =  $("#q6:checked").val();
+ var q7 =  $("#q7:checked").val();
+ var q8 =  $("#q8:checked").val();
+ var q9 =  $("#q9:checked").val();
+ var q10 =  $("#q10:checked").val();
+ var q11 =  $("#q11:checked").val();
+ var q12 =  $("#q12:checked").val();
+ var q13 =  $("#q13:checked").val();
+ var q14 =  $("#q14:checked").val();
+ var q15 =  $("#q15:checked").val();
  
  
  if (q1 != undefined)
