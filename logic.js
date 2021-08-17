@@ -153,7 +153,7 @@ function SubmitScore()
 		 else if(score>30 && score<=35) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You Have Moderate Depression. No need to Worry!!! Spend more time engaging in activities such as interacting with others.</h></div> "}
   		 else if(score>35 && score<=40) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You have Severe Depression.</h></div> "}
     		 else if(score>40 && score<=45) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You Have Severe Depression</h><br>Try to Consult a Doctor if Possible</div>";}
-		else { strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You need to consult a Doctor</div>";} 
+		//else { strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You need to consult a Doctor</div>";} 
 
              }
 	
