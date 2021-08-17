@@ -234,7 +234,7 @@ function SubmitScore()
 	var score = 0;
 	var strMessage = "";
 	var strMessage2 = "";
-	
+	var strErrMsg = "";
 	//--- do your score validation 
 	
 	
@@ -264,6 +264,8 @@ function SubmitScore()
 	
 	 score += eval(q1);
 	
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 1</li>";
  }
 
 
@@ -272,6 +274,8 @@ function SubmitScore()
 	 
 	 score += eval(q2);
 	
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 2</li>";
  }
 
 
@@ -279,6 +283,8 @@ function SubmitScore()
  if (q3 != undefined)
  {
 	 score += eval(q3);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 3</li>";
  }
 
 
@@ -286,12 +292,16 @@ function SubmitScore()
  if (q4 != undefined)
  {
 	 score += eval(q4);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 4</li>";
  }
 
 
  if (q5 != undefined)
  {
 	 score += eval(q5);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 5</li>";
  }
  
  
@@ -299,6 +309,8 @@ function SubmitScore()
   if (q6 != undefined)
  {
 	 score += eval(q6);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 6</li>";
  }
 
 
@@ -306,6 +318,8 @@ function SubmitScore()
  if (q7 != undefined)
  {
 	 score += eval(q7);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 7</li>";
  }
 
 
@@ -314,24 +328,32 @@ function SubmitScore()
  if (q8 != undefined)
  {
 	 score += eval(q8);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 8</li>";
  }
 
 
  if (q9 != undefined)
  {
 	 score += eval(q9);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 9</li>";
  }
 
 
  if (q10 != undefined)
  {
 	 score += eval(q10);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 10</li>";
  }
 
 
  if (q11 != undefined)
  {
 	 score += eval(q11);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 11</li>";
  }
 
 
@@ -339,24 +361,32 @@ function SubmitScore()
  if (q12 != undefined)
  {
 	score += eval(q12);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 12</li>";
  }
 
 
  if (q13 != undefined)
  {
 	 score += eval(q13);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 13</li>";
  }
 
 
  if (q14 != undefined)
  {
 	 score += eval(q14);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 14</li>";
  }
 
 
  if (q15 != undefined)
  {
 	 score += eval(q15);
+ }else{
+	 strErrMsg += "<li>Please Answer for Question 15</li>";
  }
 
 
@@ -371,25 +401,30 @@ function SubmitScore()
 	
 	
 	
-	
-	if(score == 0)
+	if(strErrMsg == '')
 	{
-	 strMessage = "<div class=\"alert alert-danger\" role='alert'><b>Error!</h><br>Please answer all questions.<br></div>";
-	}else{
-		strMessage = "<div class=\"alert alert-success\" role='alert'><b>Thank you!</h><br>Your Score is "+  score  +".</div>";
-         	if(score>=0 && score<=20) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You're Perfectly Alright</h></div> "}
-		 else if(result>=20 && result<=25) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You're Good. You do not have any kind of Depression</h></div> "}
-		 else if(score>=25 && score<=30) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You have Mild Depression. This can be Cured by socializing or sharing your thoughts with Others</h></div> "}
-		 else if(score>=30 && score<=35) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You Have Moderate Depression. No need to Worry!!! Spend more time engaging in activities such as interacting with others.</h></div> "}
-  		 else if(score>=35 && score<=40) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You have Severe Depression.</h></div> "}
-    		 else if(score>=40 && score<=45) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You Have Severe Depression</h><br>Try to Consult a Doctor if Possible</div>";}
-		else { strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You need to consult a Doctor</div>";} 
+		if(score == 0)
+		{
+	 	strMessage = "<div class=\"alert alert-danger\" role='alert'><b>Error!</h><br>Please answer all questions.<br></div>";
+		}else{
+			strMessage = "<div class=\"alert alert-success\" role='alert'><b>Thank you!</h><br>Your Score is "+  score  +".</div>";
+         		if(score>=0 && score<=20) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You're Perfectly Alright</h></div> "}
+		 	else if(result>=20 && result<=25) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You're Good. You do not have any kind of Depression</h></div> "}
+		 	else if(score>=25 && score<=30) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You have Mild Depression. This can be Cured by socializing or sharing your thoughts with Others</h></div> "}
+		 	else if(score>=30 && score<=35) {strMessage2 = "<div class=\"alert alert-success\" role='alert'><b>You Have Moderate Depression. No need to Worry!!! Spend more time engaging in activities such as interacting with others.</h></div> "}
+  			else if(score>=35 && score<=40) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You have Severe Depression.</h></div> "}
+    		 	else if(score>=40 && score<=45) {strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You Have Severe Depression</h><br>Try to Consult a Doctor if Possible</div>";}
+			else { strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>You need to consult a Doctor</div>";} 
 
-             }
+             	     }
 	
-	$("#result").html(strMessage);
-	$("#result2").html(strMessage2);
-}
+		$("#result").html(strMessage);
+		$("#result2").html(strMessage2);
+	}else{
+		strMessage2 = "<div class=\"alert alert-danger\" role='alert'><b>Error!</b><ul>"+ strErrMsg +"</ul></div>";
+		$("#result").html("");
+		$("#result2").html(strMessage2);
+		}
 
 function resetform()
 {
