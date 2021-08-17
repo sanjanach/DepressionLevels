@@ -5,7 +5,6 @@ function SubmitScore()
 	var strMessage = "";
 	var strMessage2 = "";
 	var strErrMsg = "";
-	//--- do your score validation 
 	
 	
 
@@ -162,12 +161,7 @@ function SubmitScore()
 
 
  
- 
 
-	
-	
-	
-	//--- do your score validation 
 	
 	
 	
@@ -210,7 +204,7 @@ function resetform()
 	var strMessage = "";
 	var strMessage2 = "";
 	var strErrMsg = "";
-	//--- do your score validation 
+
 	
 	
 	
@@ -365,10 +359,7 @@ function resetform()
  
  
 
-	
-	
-	
-	//--- do your score validation 
+
 	
 	
 	
